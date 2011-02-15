@@ -1,7 +1,9 @@
 Urbanmechanics::Application.routes.draw do
-  get "neighborhoods/new"
+  get "pages/home"
 
-  get "ideas/new"
+  get "neighborhoods/idex"
+
+  get "ideas/index"
 
   get "home/index"
 

@@ -16,8 +16,7 @@ ActiveRecord::Schema.define(:version => 20110215003219) do
     t.text     "description"
     t.integer  "rating"
     t.string   "created_by"
-    t.float    "latitude"
-    t.float    "longitude"
+    t.string   "neighborhood"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20110215003219) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
+    t.string   "password"
     t.string   "name"
     t.text     "profile"
     t.boolean  "official"
